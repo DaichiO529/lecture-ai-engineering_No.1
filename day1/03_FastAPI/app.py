@@ -268,7 +268,7 @@ def run_with_ngrok(port=8501):
         traceback.print_exc()
         # エラー後に残る可能性のあるngrokトンネルを閉じようとする
         try:
-            print("エラーにより残っている可能性のあるngrokトンネルを閉じています...")
+            print("エラーにより残っている可能性のあるngrokトンネルを閉じております...")
             tunnels = ngrok.get_tunnels()
             for tunnel in tunnels:
                 ngrok.disconnect(tunnel.public_url)
